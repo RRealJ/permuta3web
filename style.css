@@ -1,0 +1,38 @@
+* {
+	text-decoration: none;
+	list-style: none;
+	border: 1px black solid;
+	padding: 10px;
+}
+
+
+body{
+	padding: 100px;
+}
+
+.corpo {
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.linha {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	padding: 5px;
+	flex-wrap: nowrap;
+}
+
+
+.coluna {
+	padding: 10px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+p {
+	display: block;
+	margin: 0px;
+
+}
