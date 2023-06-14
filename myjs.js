@@ -1,17 +1,29 @@
-const resultado = [] //O que irá ser mostrado ou ser manipulado
-const numero = [] //O que a operação vai manipular
+
+var resultado = [] //O que irá ser mostrado ou ser manipulado
+var numero = [] //O que a operação vai manipular
+const lMostrar = document.querySelector("#mostrar p");
 
 	function addNum(paragrafo) {
-	    var num = paragrafo.innerHTML;
-	    
+	    let num = paragrafo.innerHTML;
+
+	    if !isNaN(num){
+	    	numero.push(num)
+	    }
+
+		numero.join('')
 	}
 
 
 	function operacao(paragrafo){
-		var numero = paragrafo.innerHTML;
+		if numero.lengh == 0{
+			alert('Nenhum número para calcular...')
+			break
+		}
+		let op = paragrafo.innerHTML;
 
 	}
 
 	function resultado(){
 
 	}
+
