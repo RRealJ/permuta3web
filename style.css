@@ -36,3 +36,12 @@ p {
 	margin: 0px;
 
 }
+
+#mostrar {
+	display: inline-block;
+	width: 69%;
+}
+
+#reset{
+	display: inline;
+}
