@@ -1,26 +1,38 @@
 * {
 	text-decoration: none;
 	list-style: none;
-	border: 1px black solid;
 	padding: 10px;
 }
 
 
 body{
-	padding: 100px;
+	padding: 100px 800px 100px 800px;	
+	display: flex;
+	justify-content: center;
 }
 
 .corpo {
 	display: inline-flex;
 	flex-direction: column;
+	flex-grow: 1;
+	border: 1px black solid;
+	background-color: rgb(115, 115, 236);
 }
 
 .linha {
 	display: flex;
 	flex-direction: row;
-	gap: 5px;
 	padding: 5px;
+	border-left: 1px black solid;
+	border-right: 1px black solid;
 	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	background-color: rgb(156, 184, 236);
+}
+
+.linha button{
+	font-size: 20px;
+	padding: 10px 50px;
 }
 
 
@@ -31,17 +43,43 @@ body{
 	justify-content: center;
 }
 
-p {
+button {
 	display: block;
 	margin: 0px;
 
 }
 
+.topo {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	border: 1px black solid;
+	background-color: rgb(178, 244, 253);
+	padding: 10px 10px 10px 10px;
+}
+
+#ultima {
+	border-bottom: 1px black solid;
+}
+
 #mostrar {
-	display: inline-block;
-	width: 69%;
+	display: block;
+	width: 50%;
+	font-size: 20px;
+	background-color: white;
+	border: 1px black solid;
+	overflow: hidden;
 }
 
 #reset{
+	border: 0;
 	display: inline;
+	font-size: 30px;
+	background-color: rgb(178, 244, 253);
+}
+
+#reset:hover{
+	color:rgb(115, 115, 236);
+	border-radius: 50px 50px;
 }
