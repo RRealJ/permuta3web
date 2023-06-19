@@ -15,11 +15,6 @@ function addNum(num){
 		return
 	}
 
-	if ((operacoes.includes(valor[valor.length - 1])) && num === operacoes[1]){
-		alert('Operação Inválida...')
-		return
-	}
-
 	if ((num === operacoes[0] || num === operacoes[1]) && tela.innerHTML === '') {
 		alert('Não Inicie um cálculo com esses operadores...');
 		return
